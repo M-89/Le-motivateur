@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Le Motivateur</title>
+    <script src="quotes.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Le Motivateur</h1>
+      </header>
+
+      <main>
+        <p>
+          Appuyez sur la barre d'espace pour voir apparaître un texte motivant
+          ou inspirant !
+        </p>
+        <div class="input-divs">
+          <label for="Anglais">
+            <input type="checkbox" id="anglais" name="Anglais" checked="true" />
+            Citations en anglais</label
+          >
+        </div>
+        <div class="input-divs">
+          <label for="Français">
+            <input
+              type="checkbox"
+              id="français"
+              name="Anglais"
+              checked="true"
+            />
+            Citations en français</label
+          >
+        </div>
+        <figure>
+          <blockquote>
+            <p id="paragraph-quote"></p>
+          </blockquote>
+          <figcaption></figcaption>
+        </figure>
+      </main>
+    </div>
+  </body>
+</html>

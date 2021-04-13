@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  color: #f2f2f3;
+  background-color: #121212;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.07rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-content: center;
+}
+
+#container {
+  margin: 3rem auto;
+  max-width: 100%;
+}
+
+main {
+  margin: 1rem 3rem;
+}
+
+h1 {
+  font-size: 7rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato-Bold";
+  border: solid 0.4rem #f2f2f3;
+  letter-spacing: 0.5rem;
+  padding: 1.5rem;
+  margin: 0 2rem;
+}
+
+main p {
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  color: #b9b9bc;
+}
+
+p {
+  text-align: center;
+  font-family: "Lato-Regular";
+}
+
+input {
+  margin: 1.5rem 1rem;
+  transform: scale(1.6);
+}
+
+label {
+  color: #b9b9bc;
+  font-family: "Lato-Regular";
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+blockquote p {
+  font-size: 3.5rem;
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  color: #f2f2f3;
+}
+
+figcaption {
+  color: #b9b9bc;
+  font-family: "Lato-Regular";
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.blur {
+  filter: blur(4rem);
+  transition: 0.5s filter ease-out;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1020px) {
+  label {
+    color: #b9b9bc;
+    font-family: "Lato-Regular";
+    font-size: 2.5rem;
+  }
+  input {
+    transform: scale(4);
+    margin: 3rem;
+  }
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("./fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("./fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
