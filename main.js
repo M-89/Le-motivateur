@@ -1,5 +1,7 @@
 "use strict";
 
+const h1 = document.querySelector("h1");
+
 const blockquote = document.querySelector("#paragraph-quote");
 
 const figcaption = document.querySelector("figcaption");
@@ -36,7 +38,7 @@ function randomRange(myMin, myMax) {
 // Faire apparaître une citation au hasard, en anglais ou en français
 
 function displayQuote(event) {
-  if (event.keyCode == 32) {
+  if (event.keyCode == 32 || event.type == "click") {
     // Si on appuie sur espace on exécute ce code
 
     event.preventDefault();
@@ -79,3 +81,5 @@ function displayQuote(event) {
 }
 
 document.addEventListener("keydown", displayQuote);
+
+h1.addEventListener("click", displayQuote);

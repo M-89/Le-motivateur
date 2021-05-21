@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 62.5%;
   color: #f2f2f3;
   background-color: #121212;
@@ -18,10 +19,17 @@ body {
 #container {
   margin: 3rem auto;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   margin: 1rem 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -33,6 +41,7 @@ h1 {
   letter-spacing: 0.5rem;
   padding: 1.5rem;
   margin: 0 2rem;
+  flex-shrink: 2;
 }
 
 main p {
@@ -79,6 +88,16 @@ figcaption {
 }
 
 @media screen and (min-width: 320px) and (max-width: 1020px) {
+  main p {
+    font-size: 1.9rem;
+  }
+  p,
+  em {
+    font-size: 5.5rem;
+  }
+  figcaption {
+    font-size: 3.8rem;
+  }
   label {
     color: #b9b9bc;
     font-family: "Lato-Regular";
